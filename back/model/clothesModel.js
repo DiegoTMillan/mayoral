@@ -3,20 +3,19 @@ const mongoose = require("mongoose");
 const clothesSchema = new mongoose.Schema(
     {
         img: {
-            required: true,
             type: String,
         },
         name: {
             required: true,
             type: String,
         },
-        striked: {
-            type: Array,
+        strikedPrize: {
+            type: String,
         },
         prize: {
             type: String
         },
-        offerPrize: {
+        salePrize: {
             type: String,
         },
         colors: {
