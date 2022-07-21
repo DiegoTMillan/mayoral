@@ -23,24 +23,5 @@ router.get("/", (req, res) => {
       });
     });
 });
-//GET details
-router.get("/:id", (req, res) => {
-  Model.findById(req.params.id)
-    .exec()
-    .then((data) => {
-      res.status(200).json({
-        status: "succeeded",
-        data,
-        error: null,
-      });
-    })
-    .catch((error) => {
-      res.status(404).json({
-        status: "failed",
-        data: [],
-        error: "the id is wrong",
-      });
-    });
-});
 
 module.exports = router;
