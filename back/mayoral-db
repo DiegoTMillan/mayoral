@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "62d7d48c468e2a168172e7b0"
+  },
+  "name": "Vestimenta uno",
+  "prize": "",
+  "strikedPrize": "18.99€",
+  "salePrize": "15.19€ (-20%)",
+  "colors": "más colores",
+  "img": "img1",
+  "value": 15.19
+},{
+  "_id": {
+    "$oid": "62d7d6c9468e2a168172e7b6"
+  },
+  "name": "Vestimenta dos",
+  "prize": "20.99€",
+  "strikedPrize": "",
+  "salePrize": "",
+  "colors": "más colores",
+  "img": "img2",
+  "value": 20.99
+},{
+  "_id": {
+    "$oid": "62d7d6f8468e2a168172e7b8"
+  },
+  "name": "Vestimenta tres",
+  "prize": "",
+  "strikedPrize": "18.99€",
+  "salePrize": "15.19€ (-20%)",
+  "colors": "más colores",
+  "img": "img3",
+  "value": 15.19
+},{
+  "_id": {
+    "$oid": "62d7d71e468e2a168172e7ba"
+  },
+  "name": "Vestimenta cuatro",
+  "prize": "16.99€",
+  "strikedPrize": "",
+  "salePrize": "",
+  "colors": "más colores",
+  "img": "img4",
+  "value": 16.99
+},{
+  "_id": {
+    "$oid": "62d7d73b468e2a168172e7bc"
+  },
+  "name": "Vestimenta cinco",
+  "prize": "20.99€",
+  "strikedPrize": "",
+  "salePrize": "",
+  "colors": "más colores",
+  "img": "img5",
+  "value": 20.99
+},{
+  "_id": {
+    "$oid": "62d7d754468e2a168172e7be"
+  },
+  "name": "Vestimenta seis",
+  "prize": "",
+  "strikedPrize": "18.99€",
+  "salePrize": "15.19€ (-20%)",
+  "colors": "más colores",
+  "img": "img6",
+  "value": 15.19
+},{
+  "_id": {
+    "$oid": "62d7d76a468e2a168172e7c0"
+  },
+  "name": "Vestimenta siete",
+  "prize": "16.99€",
+  "strikedPrize": "",
+  "salePrize": "",
+  "colors": "más colores",
+  "img": "img7",
+  "value": 16.99
+},{
+  "_id": {
+    "$oid": "62d7d790468e2a168172e7c2"
+  },
+  "name": "Vestimenta ocho",
+  "prize": "",
+  "strikedPrize": "18.99€",
+  "salePrize": "15.19€ (-20%)",
+  "colors": "más colores",
+  "img": "img8",
+  "value": 15
+},{
+  "_id": {
+    "$oid": "62d7d79f468e2a168172e7c4"
+  },
+  "name": "Vestimenta nueve",
+  "prize": "20.99€",
+  "strikedPrize": "",
+  "salePrize": "",
+  "colors": "más colores",
+  "img": "img9",
+  "value": 20.99
+},{
+  "_id": {
+    "$oid": "62d7d7b0468e2a168172e7c6"
+  },
+  "name": "Vestimenta diez",
+  "prize": "",
+  "strikedPrize": "18.99€",
+  "salePrize": "15.19€ (-20%)",
+  "colors": "más colores",
+  "img": "img10",
+  "value": 15.19
+},{
+  "_id": {
+    "$oid": "62d7d7d4468e2a168172e7c8"
+  },
+  "name": "Vestimenta once",
+  "prize": "16.99€",
+  "strikedPrize": "",
+  "salePrize": "",
+  "colors": "más colores",
+  "img": "img11",
+  "value": 16.99
+},{
+  "_id": {
+    "$oid": "62d7d7dd468e2a168172e7ca"
+  },
+  "name": "Vestimenta doce",
+  "prize": "",
+  "strikedPrize": "18.99€",
+  "salePrize": "15.19€ (-20%)",
+  "colors": "más colores",
+  "img": "img12",
+  "value": 15.19
+}]

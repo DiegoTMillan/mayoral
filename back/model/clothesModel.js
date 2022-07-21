@@ -22,6 +22,10 @@ const clothesSchema = new mongoose.Schema(
             required: true,
             type: String,
         },
+        value: {
+            required: true,
+            type: Number,
+        }
     },
     {
         versionKey: false,

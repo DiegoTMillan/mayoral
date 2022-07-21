@@ -1,16 +1,161 @@
-html,
-body {
-  padding: 0;
+/* import fonts */
+/* @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300;500;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&display=swap');
+
+/* reboot css */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  border: 0;
 }
 
+:root {
+  font-size: 0.785rem;
+}
+
+/* global css */
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f9f8f8;
+}
 a {
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+/* plus and minus icons */
+.header{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.orderIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em 0em;
+}
+.orderIcons .icon{
+  font-size: 2rem;
+}
+.orderIcons .icon:hover{
+  transform: scale(1.5);
+  transition: ease-in-out all .5s;
+}
+
+.border {
+  border-bottom: 2px solid rgb(172, 171, 171);
+  margin: 2em 0em;
+}
+
+/* each container and card style */
+
+.cardContainer {
+  padding: .5em;
+  max-width: 50%;
+  font-family: "Noto Sans";
+  display: flex;
+}
+.card {
+  text-align: center;
+  border-radius: 7px;
+  padding: 1em;
+  border: 2px solid rgb(14, 172, 220);
+  background-color: white;
+  box-shadow: 1px 1px 10px rgb(184, 184, 184);
+}
+
+/* icon inside input */
+
+.inline{
+  max-width:70%;
+  margin-top: 4em;
+  margin: auto;
+}
+.input-icons .icon {
+  position: absolute;
+}
+.icon {
+  padding: .5em;
+  min-width: .5em;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.input-field {
+  width: 100%;
+  padding: .5em;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+/* card css */
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 15em;
+}
+.cardName {
+  color: #787676;
+  padding: 0.5em 0em 1em 0em;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.cardPrize {
+  font-size: 1.2rem;
+  color: #787676;
+}
+.cardStrikedPrize {
+  font-size: 1.2rem;
+  color: #787676;
+}
+.cardSalePrize {
+  color: rgb(248, 100, 100);
+  padding: 0.5em 0em;
+  font-size: 1.2rem;
+}
+.cardColors {
+  padding: 1em 0em;
+  color: #a6a6a8;
+}
+button {
+  background-color: #3372ce;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+
+.value{
+  display: none;
+}
+
+@media (min-width: 1400px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 90%;
+  }
+  .border {
+    display: none;
+  }
+  .cardContainer {
+    padding: 2em;
+    max-width: 70%;
+  }
+  .card{
+    min-width: 20em;
+  }
+  .inline{
+    min-width: 60%;
+    margin: 0;
+    margin-top: 3em;
+  }
 }
