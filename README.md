@@ -44,6 +44,12 @@ And finally
 npm install
 ```
 
+After all, just run this command in back directory
+
+```
+npm run dev
+```
+
 2. ### Frontend
 
 I have created this project with Next.js and Typescript. Then I have installed some extra tools.
@@ -69,10 +75,23 @@ npm i --save @fortawesome/react-fontawesome
 npm install axios
 ```
 
-   3. ### Last step
+   3. ### Install last files
 
 ```
 npm install
+```
+
+   4. ### Last steps
+
+```
+npm run dev
+```
+in front directory.
+
+Finally just write in your browser:
+
+```
+localhost:3000
 ```
 
 ## Breakpoints:
