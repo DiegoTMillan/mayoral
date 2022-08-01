@@ -1,20 +1,23 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Card } from "../components/Card.tsx";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from 'axios'
-// import { handleSortAsc, handleSortDesc } from "../components/Sort";
+import useSort from "../components/Sort";
+import Context from "../components/Context";
+
 
 export default function Home() {
-
+  
   // setting variables for rendering cards and filter by name
   const [cardData, setCardData] = useState();
   const [staticData, setStaticData] = useState([]);
   const [searchInput, setSearchInput] = useState("");
+  const context = useContext(Context)
 
   //getting data from back with axios
   const getInfo = async () => {
@@ -23,6 +26,7 @@ export default function Home() {
     .then((response) => {
       setCardData(response.data.data);
       setStaticData(response.data.data);
+      context.setCardData(response.data.data)
     })
     .catch((error) => {
       console.log(error);
@@ -58,12 +62,12 @@ export default function Home() {
     setCardData(sortedData)
   }
 
-  function handleSortAsc() {
-    const sortedData = [...cardData].sort((a, b) => {
-      return a.value < b.value ? 1 : -1
-    })
-    setCardData(sortedData)
-  }
+  // function Sort() {
+  //   const sortedData = [...cardData].sort((a, b) => {
+  //     return a.value < b.value ? 1 : -1
+  //   })
+  //   setCardData(sortedData)
+  // }
 
   if (!cardData) {
     return (
@@ -95,7 +99,7 @@ export default function Home() {
           </div>
           <div className="orderIcons">
           <FontAwesomeIcon onClick={handleSortDesc} id="sort-price" className="icon" icon={faMinus} />
-          <FontAwesomeIcon onClick={handleSortAsc} id="sort-price" className="icon" icon={faPlus} />
+          <FontAwesomeIcon onClick={useSort} id="sort-price" className="icon" icon={faPlus} />
           </div>
         </div>
         <div className={styles.box}>
